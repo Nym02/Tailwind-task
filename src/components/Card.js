@@ -6,6 +6,7 @@ const Card = ({ type = "", mentionName = '', name = "", self = false, timeAgo = 
 
             <div className={`items-center mb-4 ${type === 'reply' ? 'ml-10 md:ml-20 md:w-[600px] last:mb-0' : 'md:w-[675px]'}`}>
                 <div className="w-full flex bg-white rounded-md p-3 gap-5">
+                    {/* like counting part  */}
                     <div>
                         <div className="bg-[#F6F8F6] flex flex-col justify-center items-center rounded-md p-2 gap-1">
                             <div className="cursor-pointer">
@@ -18,8 +19,10 @@ const Card = ({ type = "", mentionName = '', name = "", self = false, timeAgo = 
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" className="w-3 h-3 text-[#5358B6] opacity-70"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" /></svg>
                             </div>
                         </div>
+                        {/* like counting part  */}
                     </div>
                     <div className="w-full">
+                        {/* profile info and reply button  */}
                         <div className="w-full flex justify-between items-center">
                             <div className="w-full flex gap-2 md:gap-4 items-center">
                                 <div >
@@ -63,6 +66,7 @@ const Card = ({ type = "", mentionName = '', name = "", self = false, timeAgo = 
                                 }
                             </div>
                         </div>
+                        {/* profile info and reply button  */}
                         {/* comment/reply text  */}
                         <div className="mt-3">
                             <p className="text-gray-400 text-xs">{mentionName !== '' && <><span className='font-medium text-[#5358B6] cursor-pointer'>@{mentionName}</span></>} Impressive!Though it seems that the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness in varias breakpoints works really well.</p>
